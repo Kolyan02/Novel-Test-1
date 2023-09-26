@@ -17,7 +17,7 @@ public class UsernameInputHandler : MonoBehaviour
 
         uiUsernameInput.Setup(OnConfirmPressed);
 
-        Debug.Log("sdfldff");
+        //Debug.Log("sdfldff");
     }
 
     private void OnConfirmPressed() {

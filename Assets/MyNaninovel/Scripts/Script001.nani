@@ -1,0 +1,101 @@
+# Beginning
+@printer Bubble
+
+@bgm NarutoTrack
+@back Street
+@char Naruto.Happy
+@char Sakura
+
+@input PlayerName summary:"Choose your name."
+@stop
+
+@showUI MiniMapUI
+@showUI AchievementsUI
+
+@print {Random(T_Greeting1,T_Greeting2,T_Greeting3)}
+Naruto.Happy: Dattebayo, Sakura, how are you!
+Sakura: Hi, {PlayerName} 
+Sakura.Sad: Did you see Sasuke, I miss him:()
+Naruto.Default: I saw him near the Hokage building, hold on...
+@unlock Achievements1
+@hide Sakura
+
+@back HomeOutside
+@char Sasuke
+Naruto.Happy: Hi, Sasuke! It's been a long time ago
+Sasuke.Angry: You again?
+Naruto.Default: Sakura is searching for you.
+Sasuke.Default: And I'm searching for a way to pass this impossible game
+Sasuke.Default: Can you help me, {PlayerName}?
+@lock Achievements1
+@unlock Achievement/2
+Naruto.Happy: Of Course, Dattebayo!
+
+@set day=1
+
+@back HomeOutside
+@lock Achievement/2
+Sasuke: Ok
+Sasuke: Go to my house and bring me my bandana, {PlayerName}
+@unlock Achievement/3
+@hide Sasuke
+
+@set ach=1
+
+@back Room
+@char Naruto.Default
+Naruto.Thinking: Where's this bandana?
+
+@back HomeOutside
+@char Naruto.Happy
+Naruto: I found your bandana
+Naruto.Thinking: Where's Sasuke, Dattebayo??
+@lock Achievement/3
+@unlock Achievement/4
+
+@set day=2
+
+@back Street
+@char Naruto.Default
+@char Sakura
+Naruto.Default: Sakura, I met Sasuke but he...
+@char Sasuke
+Naruto.Thinking: Stop, why is he there?
+Sasuke.Angry: It's none of your business.
+Naruto.Default: I found bandana and wanted to pass it to you
+Sakura: No, {PlayerName}, if you love me than pass me his bandana
+Sasuke.Default: Don't listen to her. It's my bandana.
+Sasuke.Angry: Give me it back, idiot.
+
+@lock Achievement/4
+@hide Sasuke
+
+@set day=3
+
+@choice "Leave item" goto:.NarutoChoice
+@choice "Give bandana to Sakura" goto:.SakuraChoice
+@choice "Give bandana to Sasuke" goto:.SasukeChoice
+@stop
+
+# NarutoChoice
+    @back Street
+    Naruto.Happy: Look, I have new bandana dattebayo.
+    Sakura.Angry: Well, you now look way more ugly.
+    Sakura.Angry: Go away!
+    @hide Sakura
+
+    @back HomeOutside
+    @char Sasuke.Angry
+    Naruto.Happy: Sasuke, hi again, I wanted to say...
+    Sasuke: You got my bandana, now I'm forced to leave Konoha[char Naruto.Default] forever and destroy you.
+@stop
+
+# SakuraChoice
+    @back Street
+    Naruto.Happy: Suck
+@stop
+
+# SasukeChoice
+    @back Street
+    Naruto.Happy: Fuck
+@stop

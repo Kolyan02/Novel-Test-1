@@ -1,0 +1,88 @@
+; English <en> to Russian <ru> localization document for `Script001` naninovel script
+
+# f4c8a666
+; @input PlayerName summary:"Choose your name."
+
+# 9ca86e27
+; @print {Random(T_Greeting1,T_Greeting2,T_Greeting3)}
+
+# 95950bc
+; Naruto.Happy: Dattebayo, Sakura, how are you!
+
+# aac9fe03
+; Sakura: Hi, {PlayerName} 
+
+# b4f0e3c8
+; Sakura.Sad: Did you see Sasuke, I miss him:()
+
+# 7f1bbb57
+; Naruto.Default: I saw him near the Hokage building, hold on...
+
+# 37f5e93f
+; Naruto.Happy: Hi, Sasuke! It's been a long time ago
+
+# fda70189
+; Sasuke.Angry: You again?
+
+# e0a53232
+; Naruto.Default: Sakura is searching for you.
+
+# e21243ae
+; Sasuke.Default: And I'm searching for a way to pass this impossible game
+
+# 3e8adfae
+; Sasuke.Default: Can you help me, {PlayerName}?
+
+# 6d4325f0
+; Naruto.Happy: Of Course, Dattebayo!
+
+# 58945048
+; Sasuke: Ok
+
+# c9f4605d
+; Sasuke: Go to my house and bring me my bandana, {PlayerName}
+
+# 14d9e904
+; Naruto.Thinking: Where's this bandana?
+
+# 1d7576c0
+; Naruto: I found your bandana
+
+# 2099f3e0
+; Naruto.Thinking: Where's Sasuke, Dattebayo??
+
+# 1f15dc85
+; Naruto.Default: Sakura, I met Sasuke but he...
+
+# 6241e4d2
+; Naruto.Thinking: Stop, why is he there?
+
+# 2851ee49
+; Sasuke.Angry: It's none of your business.
+
+# ca178cc0
+; Naruto.Default: I found bandana and wanted to pass it to you
+
+# 750a13d8
+; Sakura: No, {PlayerName}, if you love me than pass me his bandana
+
+# 2c72893d
+; Sasuke.Default: Don't listen to her. It's my bandana.
+
+# c21d88de
+; Sasuke.Angry: Give me it back, idiot.
+
+# bbc1bf7
+;     Naruto.Happy: Look, I have new bandana dattebayo.
+
+# a7a30343
+;     Sakura.Angry: Well, you now look way more ugly.
+
+# f13edbdb
+;     Sakura.Angry: Go away!
+
+# 172599a4
+;     Naruto.Happy: Sasuke, hi again, I wanted to say...
+
+# 71d5a473
+;     Sasuke: You got my bandana, now I'm forced to leave Konoha[char Naruto.Default] forever and destroy you.

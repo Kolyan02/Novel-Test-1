@@ -32,8 +32,8 @@ public class PanelManager : MonoBehaviour
     }
 
     private void Start2() {
-        
         uiUsernameInputGO.SetActive(false);
+        return;
         ShowLocation(0, () => {
             QuestManager.Instance.AddQuest(quests[0]);
             ShowLocation(1, () => {
