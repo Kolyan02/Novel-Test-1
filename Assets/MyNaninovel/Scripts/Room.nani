@@ -1,0 +1,20 @@
+@if findBandana
+    @back Room
+
+    @choice handler:ButtonArea button:MapButtons/MapChoiceButton pos:-800,-400 goto:MapScript
+
+    @choice handler:ButtonArea button:MapButtons/BandanaButton pos:600,-400 goto:.FoundBandana
+
+    @char Naruto.Thinking
+    Naruto.Thinking: Where's this bandana? [i] Help me to find it!
+@else
+    There's no quests here yet[i] LESS GO BACK![skipInput]
+    @goto MapScript
+@endif
+@stop
+
+#FoundBandana
+    @sfx QuestSFX
+    @toast "Find Bandana: Completed!" time:2
+@set findBandana=false;roomAvailable=false;talkToMyself=true
+@goto MapScript

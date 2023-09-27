@@ -1,0 +1,109 @@
+@if !enteredName
+    # Beginning
+    @printer DialogueModified
+
+    @bgm NarutoTrack
+    @back Street
+    @char Naruto.Happy wait:false
+    @char Sakura wait:false
+
+    @input PlayerName summary:"Choose your name."
+    @stop
+
+    @choice handler:ButtonArea button:MapButtons/MapChoiceButton pos:-800,-400 goto:MapScript
+
+    ;@print {Random(T_Greeting1,T_Greeting2,T_Greeting3)}
+    Naruto.Happy: Dattebayo, Sakura, how are you!
+    Sakura: Hi, {PlayerName} 
+    Sakura.Sad: Did you see Sasuke, I miss him:()
+        @sfx QuestSFX
+        @toast "Find Sasuke"
+    Naruto.Default: I saw him near the Hokage building, hold on...[skipInput]
+
+    @set enteredName=true;findSasuke=true
+    @stop
+@elseif backToSakura
+    @back Street wait:false
+    @char Naruto.Default wait:false
+    @char Sakura wait:false
+
+    @choice handler:ButtonArea button:MapButtons/MapChoiceButton pos:-800,-400 goto:MapScript
+
+        @sfx QuestSFX
+        @toast "Go back to Sakura: Completed" time:2
+    Naruto.Default: Sakura, I met Sasuke but he...
+    @char Sasuke
+    Naruto.Thinking: Stop, why is he there?
+    Sasuke.Angry: It's none of your business.
+    Naruto.Default: I found bandana and wanted to pass it to you
+    Sakura.Angry: No, {PlayerName}, if you love me than pass me his bandana
+    Sasuke.Default: Don't listen to her. It's my bandana.
+    @char Sakura.Default wait:false
+    Sasuke.Angry: Give me it back, idiot.
+        @sfx QuestSFX
+        @toast "Pass Bandana"
+
+
+    @choice "Leave item" goto:.NarutoChoice
+    @choice "Give bandana to Sakura" goto:.SakuraChoice
+    @choice "Give bandana to Sasuke" goto:.SasukeChoice
+    @stop
+@else
+    @back Street
+    There's no quests here yet[i] LESS GO BACK![skipInput]
+    @goto MapScript
+@endif
+@stop
+
+# NarutoChoice
+    @hide Sasuke
+    @set backToSakura=false
+        @sfx QuestSFX
+        @toast "Quest Completed"
+    @back Street
+    Naruto.Happy: Look, I have new bandana dattebayo.
+    Sakura.Angry: Well, you now look way more ugly.
+    Sakura.Angry: Go away!
+    @hide Sakura
+
+    @back HomeOutside
+    @char Sasuke.Angry
+    Naruto.Happy: Sasuke, hi again, I wanted to say...
+    Sasuke: You got my bandana, now I'm forced to leave Konoha[char Naruto.Default] forever and destroy you.
+    @hide Sasuke
+@stop
+
+# SakuraChoice
+    @hide Sasuke
+    @set backToSakura=false
+        @sfx QuestSFX
+        @toast "Quest Completed"
+    @back Street
+    Naruto.Default: I wish I could leave this bandana for Sasuke.
+    Sakura.Default: Never mind. [i] You did the right thing!
+    @hide Sakura
+
+    @back HomeOutside
+    @char Sasuke.Angry
+    Naruto.Happy: Sasuke, hi again, I wanted to say...
+    Sasuke: You passed my bandana to Sakura, now I'm forced to leave Konoha[char Naruto.Default] and destroy you.
+    @hide Sasuke
+@stop
+
+# SasukeChoice
+    @hide Sasuke
+    @set backToSakura=false
+        @sfx QuestSFX
+        @toast "Quest Completed"
+    @back Street
+    Naruto.Default: He is my best friend and...
+    Sakura.Angry: You are idiot.
+    Sakura.Angry: Go away!
+    @hide Sakura
+
+    @back HomeOutside
+    @char Sasuke.Default
+    Naruto.Happy: Sasuke, hi again. [i] It was a very hard choice.
+    Sasuke.Default: You brought me my bandana. Well done! But I need to leave Konoha anyway.
+    @hide Sasuke
+@stop

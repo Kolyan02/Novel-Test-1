@@ -82,7 +82,7 @@ MonoBehaviour:
       customData:
         rid: -2
       Pivot: {x: 0.5, y: 0}
-      PixelsPerUnit: 100
+      PixelsPerUnit: 150
       EnableDepthPass: 1
       DepthAlphaCutoff: 0.5
       CustomTextureShader: {fileID: 0}
@@ -96,8 +96,8 @@ MonoBehaviour:
         height: 1
       BakedLookDirection: 1
       DisplayName: '{PlayerName}'
-      UseCharacterColor: 0
-      NameColor: {r: 1, g: 1, b: 1, a: 1}
+      UseCharacterColor: 1
+      NameColor: {r: 0.8113208, g: 0.7878018, b: 0.18752226, a: 1}
       MessageColor: {r: 1, g: 1, b: 1, a: 1}
       HighlightWhenSpeaking: 0
       HighlightCharacterCount: 0
@@ -124,7 +124,7 @@ MonoBehaviour:
       customData:
         rid: -2
       Pivot: {x: 0.5, y: 0}
-      PixelsPerUnit: 100
+      PixelsPerUnit: 150
       EnableDepthPass: 1
       DepthAlphaCutoff: 0.5
       CustomTextureShader: {fileID: 0}
@@ -138,8 +138,8 @@ MonoBehaviour:
         height: 1
       BakedLookDirection: 1
       DisplayName: 
-      UseCharacterColor: 0
-      NameColor: {r: 1, g: 1, b: 1, a: 1}
+      UseCharacterColor: 1
+      NameColor: {r: 0.8490566, g: 0.22828408, b: 0.6142387, a: 1}
       MessageColor: {r: 1, g: 1, b: 1, a: 1}
       HighlightWhenSpeaking: 0
       HighlightCharacterCount: 0
@@ -166,7 +166,7 @@ MonoBehaviour:
       customData:
         rid: -2
       Pivot: {x: 0.5, y: 0}
-      PixelsPerUnit: 100
+      PixelsPerUnit: 150
       EnableDepthPass: 1
       DepthAlphaCutoff: 0.5
       CustomTextureShader: {fileID: 0}
@@ -180,8 +180,8 @@ MonoBehaviour:
         height: 1
       BakedLookDirection: 1
       DisplayName: 
-      UseCharacterColor: 0
-      NameColor: {r: 1, g: 1, b: 1, a: 1}
+      UseCharacterColor: 1
+      NameColor: {r: 0.082858644, g: 0.5680227, b: 0.9245283, a: 1}
       MessageColor: {r: 1, g: 1, b: 1, a: 1}
       HighlightWhenSpeaking: 0
       HighlightCharacterCount: 0

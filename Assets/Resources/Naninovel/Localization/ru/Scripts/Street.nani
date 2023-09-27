@@ -1,0 +1,115 @@
+; English <en> to Russian <ru> localization document for `Street` naninovel script
+
+# f4c8a666
+@input PlayerName summary:"Введи свое имя."
+
+# 9669f408
+@choice handler:ButtonArea button:MapButtons/MapChoiceButton pos:-800,-400 goto:MapScript
+
+# 95950bc
+Naruto.Happy: Даттебайо, Сакура, как ты!
+
+# aac9fe03
+Sakura: Привет, {PlayerName} 
+
+# b4f0e3c8
+Sakura.Sad: Ты случайно не видел Саске, Я скучаю по нему:()
+
+# bc89a0c8
+@toast "Найти Саске"
+
+# ff53569d
+Naruto.Default: Я видел его возле здания Хокаге, погоди немного...[skipInput]
+
+# 9669f408
+@choice handler:ButtonArea button:MapButtons/MapChoiceButton pos:-800,-400 goto:MapScript
+
+# ee4ebf57
+@toast "Вернуться к Сакуре: Выполнено" time:2
+
+# 1f15dc85
+Naruto.Default: Сакура, я встретил Саске но он...
+
+# 6241e4d2
+Naruto.Thinking: Стоп, почему он здесь?
+
+# 2851ee49
+Sasuke.Angry: Не твое дело.
+
+# ca178cc0
+Naruto.Default: Я нашел твою бандану и хотел передать ее
+
+# 7070e639
+Sakura.Angry: НЕТ, {PlayerName}, если ты любишь меня отдай мне эту бандану
+
+# 2c72893d
+Sasuke.Default: Не слушай эту зануду. Отдай мне ее.
+
+# c21d88de
+Sasuke.Angry: Живо!
+
+# 340fac89
+@toast "Отдать Бандану"
+
+# 32152e45
+@choice "Оставить предмет себе" goto:.NarutoChoice
+
+# 71bf19ec
+@choice "Отдать бандану Сакуре" goto:.SakuraChoice
+
+# db893516
+@choice "Отдать бандану Саске" goto:.SasukeChoice
+
+# e168d99d
+На этой локации пока нет заданий по квест[i] ПОЙДЕМ НАЗАД![skipInput]
+
+# cf02ea95
+@toast "КВЕСТ ВЫПОЛНЕН"
+
+# bbc1bf7
+Naruto.Happy: Посмотри, у меня новая бандана.
+
+# a7a30343
+Sakura.Angry: Мда, теперь ты выглядишь еще уродливее.
+
+# f13edbdb
+Sakura.Angry: Прочь!
+
+# 172599a4
+Naruto.Happy: Саске, привет снова, я хотел сказать...
+
+# 71d5a473
+Sasuke: Ты забрал мою бандану, теперь я вынужден покинуть Коноху[char Naruto.Default] навсегда и уничтожить тебя.
+
+# cf02ea95
+@toast "Квест Выполнен"
+
+# 42133a01
+Naruto.Default: Я бы хотел все-таки отдать эту бандану Саске..
+
+# a94457d7
+Sakura.Default: Не обращай внимания. [i] Ты поступил правильно!
+
+# 172599a4
+Naruto.Happy: Саске, привет снова, я хотел сказать...
+
+# df32e795
+Sasuke: Ты отдал мою бандану Сакуре, теперь я вынужден покинуть Коноху[char Naruto.Default] навсегда и уничтожить тебя.
+
+# cf02ea95
+@toast "Квест Выполнен"
+
+# 519f8b07
+Naruto.Default: Он мой лучший друг и...
+
+# 3cdf7709
+Sakura.Angry: Ты идиот.
+
+# f13edbdb
+Sakura.Angry: Пошел прочь!
+
+# b26b6420
+Naruto.Happy: Саске, привет снова. [i] Это был очень тяжелый выбор.
+
+# 7491c30d
+Sasuke.Default: Ты отдал мне бандану. И правильно сделал! Но я вынужден покинуть Коноху в любом случае.

@@ -1,3 +1,6 @@
 T_Greeting1: Hey!
 T_Greeting2: Hi!
-T_Greeting3: Hi Nig())())(
+T_Greeting3: Hello!!!
+T_LocationDescr1: The best building in Konoha.
+T_LocationDescr2: There are so many people around here.
+T_LocationDescr3: I have very clean room!

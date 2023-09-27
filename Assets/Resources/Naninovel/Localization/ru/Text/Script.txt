@@ -3,3 +3,6 @@
 T_Greeting1: Приветик!
 T_Greeting2: Привет!
 T_Greeting3: Даттебайо())())(
+T_LocationDescr1: Лучшая постройка в Конохе.
+T_LocationDescr2: На переулке очень много людей.
+T_LocationDescr3: У меня очень чистая комната!

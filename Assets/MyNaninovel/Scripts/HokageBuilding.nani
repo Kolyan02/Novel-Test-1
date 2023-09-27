@@ -1,0 +1,59 @@
+@back HomeOutside
+@if findSasuke
+    @char Sasuke
+
+    @choice handler:ButtonArea button:MapButtons/MapChoiceButton pos:-800,-400 goto:MapScript
+
+    Naruto.Happy: Hi, Sasuke! [i] [sfx QuestSFX][toast "Find Sasuke: Completed" time:2 ] It's been a long time ago
+    Sasuke.Angry: You again?
+    Naruto.Default: Sakura is searching for you.
+    Sasuke.Default: And I'm searching for a way to pass this impossible game
+        @sfx QuestSFX
+        @toast "Help Sasuke"
+    Sasuke.Default: Can you help me, {PlayerName}?
+    Naruto.Happy: Of Course, Dattebayo!
+
+
+    ;@loadScene MiniGame additive:true
+    @hideUI ContinueInputUI
+    @adventure
+    @stop
+@elseif talkToMyself
+    @char Naruto.Happy
+
+    @choice handler:ButtonArea button:MapButtons/MapChoiceButton pos:-800,-400 goto:MapScript
+
+    Naruto: I found your bandana
+    Naruto.Thinking: Where's Sasuke, Dattebayo??
+        @sfx QuestSFX
+        @toast "Go back to Sakura"
+    @set talkToMyself=false;backToSakura=true
+@else
+    There's no quests here yet[i] LESS GO BACK![skipInput]
+    @goto MapScript
+@endif
+@stop
+
+# AfterGame
+@set enteredName=true;findSasuke=true;
+
+@printer DialogueModified
+
+@bgm NarutoTrack wait:false
+@char Naruto.Happy wait:false
+@char Sasuke wait:false
+
+@choice handler:ButtonArea button:MapButtons/MapChoiceButton pos:-800,-400 goto:MapScript
+
+@showUI ContinueInputUI
+    @sfx QuestSFX
+    @toast "Help Sasuke: Completed!" time:2
+
+@back HomeOutside
+Sasuke: Ok
+Sasuke: Go to my house and bring me my bandana, Naruto
+    @sfx QuestSFX
+    @toast "Find Bandana"
+
+@set findSasuke=false;findBandana=true
+@stop

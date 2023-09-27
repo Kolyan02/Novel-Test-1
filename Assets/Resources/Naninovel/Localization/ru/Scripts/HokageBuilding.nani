@@ -1,0 +1,55 @@
+; English <en> to Russian <ru> localization document for `HokageBuilding` naninovel script
+
+# 9669f408
+@choice handler:ButtonArea button:MapButtons/MapChoiceButton pos:-800,-400 goto:MapScript
+
+# 14cd39d1
+Naruto.Happy: Привет, Саске! [i] [sfx QuestSFX][toast "Найти Саске: Выполнено" time:2 ] Прошло много в
+
+# fda70189
+Sasuke.Angry: Снова ты?
+
+# e0a53232
+Naruto.Default: Сакура ищет тебя.
+
+# e21243ae
+Sasuke.Default: А я ищу способ, как пройти эту невозможную игру.
+
+# ac747089
+@toast "Помоги Саске"
+
+# 3e8adfae
+Sasuke.Default: Можешь помочь мне, {PlayerName}?
+
+# 6d4325f0
+Naruto.Happy: Конечно, Даттебайо!
+
+# 9669f408
+@choice handler:ButtonArea button:MapButtons/MapChoiceButton pos:-800,-400 goto:MapScript
+
+# 1d7576c0
+Naruto: Я нашел твою бандану...
+
+# 2099f3e0
+Naruto.Thinking: Стоп, а где Саске, даттебайо??
+
+# f0eac687
+@toast "Вернитесь к Сакуре"
+
+# e168d99d
+На этой локации пока нет заданий по квесту[i] ПОЙДЕМ НАЗАД![skipInput]
+
+# 9669f408
+@choice handler:ButtonArea button:MapButtons/MapChoiceButton pos:-800,-400 goto:MapScript
+
+# d8464a7a
+@toast "Помоги Саске: Выполнено!" time:2
+
+# 58945048
+Sasuke: Ок
+
+# 3d08092a
+Sasuke: Иди в мой дом и принеси мне бандану, Наруто
+
+# e38e44ca
+@toast "Найти бандану"

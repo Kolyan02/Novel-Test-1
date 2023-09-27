@@ -1,0 +1,16 @@
+; English <en> to Russian <ru> localization document for `Room` naninovel script
+
+# 9669f408
+@choice handler:ButtonArea button:MapButtons/MapChoiceButton pos:-800,-400 goto:MapScript
+
+# fcaaaa58
+@choice handler:ButtonArea button:MapButtons/BandanaButton pos:600,-400 goto:.FoundBandana
+
+# 39327ee
+Naruto.Thinking: Хм, куда же Саске спрятал бандану? [i] Помоги мне найти ее!
+
+# e168d99d
+На этой локации пока нет заданий по квесту[i] ПОЙДЕМ НАЗАД![skipInput]
+
+# 9496879a
+@toast "Найди Бандану: Выполнено!" time:2

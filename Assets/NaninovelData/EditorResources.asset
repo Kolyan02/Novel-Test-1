@@ -165,21 +165,27 @@ MonoBehaviour:
       guid: 480f5db62ea305c46b89a86496d2a0c9
     - name: ToastUI
       pathPrefix: UI
-      guid: dd85ce99288c2f8488447fa511b1c0d6
-    - name: MiniMapUI
+      guid: 603194cc147332344955ee91acf2e651
+    - name: Map
       pathPrefix: UI
-      guid: 48e71ba8260253840a8109260c86d0bc
-    - name: AchievementsUI
-      pathPrefix: UI
-      guid: 07f1d13bc9caedd42b4357ae26eadacb
+      guid: e87f06800aa3a25429823bfc72f270db
   - Id: Scripts
     Resources:
     - name: Title
       pathPrefix: Scripts
       guid: 58456f4437baaa7429bc78e230110485
-    - name: Script001
+    - name: MapScript
       pathPrefix: Scripts
-      guid: 28c33d4860f0e1b4e95126f21f86ce72
+      guid: b9a8950c0eead6741b304120ae159cdd
+    - name: HokageBuilding
+      pathPrefix: Scripts
+      guid: 40bdeed928984f449b4fd1c845fd3495
+    - name: Street
+      pathPrefix: Scripts
+      guid: 498e034628c25734cb49442d41ea925a
+    - name: Room
+      pathPrefix: Scripts
+      guid: abbdb9b2cfd29c6468240a2f9b06219c
   - Id: Characters/f67647eb-019f-406b-b88a-dd9aaf2dfd80
     Resources:
     - name: Default
@@ -216,25 +222,28 @@ MonoBehaviour:
     - name: Typewriter
       pathPrefix: Audio
       guid: 4760469341bafb14f8c9336c6e63408e
+    - name: QuestSFX
+      pathPrefix: Audio
+      guid: 8d4e9f5616abc9f4392ab9196e51cd6d
   - Id: Characters/d70d398e-f70b-49e9-a3a8-5884893828e9
     Resources:
     - name: Default
       pathPrefix: Characters/Sakura
-      guid: 
+      guid: 0ae591402fa11784e9932ec54d52d61a
     - name: Sad
       pathPrefix: Characters/Sakura
-      guid: 
+      guid: a98535a8a9641654b8b1382dcb4748ab
     - name: Angry
       pathPrefix: Characters/Sakura
-      guid: 
+      guid: 80ed7ddfef8603f4d8ca47d1c1328d85
   - Id: Characters/246ae8ee-e71d-49aa-a930-8676b7f623c0
     Resources:
     - name: Default
       pathPrefix: Characters/Sasuke
-      guid: 
+      guid: 308f8e23622ed5a45aed8d4346d77af1
     - name: Angry
       pathPrefix: Characters/Sasuke
-      guid: 
+      guid: 6419feccb79e7c54fa9111cda4497088
   - Id: Unlockables
     Resources:
     - name: Achievements/1
@@ -252,3 +261,13 @@ MonoBehaviour:
     - name: Achievements1
       pathPrefix: Unlockables
       guid: 
+  - Id: TextPrinters/d7be048c-6c54-4e3e-94e8-6e2de3747c88
+    Resources:
+    - name: Tooltip
+      pathPrefix: TextPrinters
+      guid: 38b30120251d0a04b9020beae3d032ad
+  - Id: TextPrinters/20e5894e-7bec-46a4-92ac-c54a297035c9
+    Resources:
+    - name: DialogueModified
+      pathPrefix: TextPrinters
+      guid: 22bc789746c1a164a8dce0b6ed2e6b2a
